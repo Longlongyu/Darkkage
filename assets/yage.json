@@ -1,0 +1,104 @@
+{
+	"textures": [
+		{
+			"image": "yage.png",
+			"format": "RGBA8888",
+			"size": {
+				"w": 998,
+				"h": 778
+			},
+			"scale": 1,
+			"frames": [
+				{
+					"filename": "wait-1.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 499,
+						"h": 389
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 499,
+						"h": 389
+					},
+					"frame": {
+						"x": 0,
+						"y": 0,
+						"w": 499,
+						"h": 389
+					}
+				},
+				{
+					"filename": "wait-2.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 499,
+						"h": 389
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 499,
+						"h": 389
+					},
+					"frame": {
+						"x": 499,
+						"y": 0,
+						"w": 499,
+						"h": 389
+					}
+				},
+				{
+					"filename": "wait-3.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 499,
+						"h": 389
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 499,
+						"h": 389
+					},
+					"frame": {
+						"x": 0,
+						"y": 389,
+						"w": 499,
+						"h": 389
+					}
+				},
+				{
+					"filename": "wait-4.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 499,
+						"h": 389
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 499,
+						"h": 389
+					},
+					"frame": {
+						"x": 499,
+						"y": 389,
+						"w": 499,
+						"h": 389
+					}
+				}
+			]
+		}
+	],
+	"meta": {
+		"app": "https://www.codeandweb.com/texturepacker",
+		"version": "3.0",
+		"smartupdate": "$TexturePacker:SmartUpdate:1ddfaa4808a43953ee1cd6b794a0ad2a:35a023f8f17688dd84f64ebb6045c83d:9c4f0ff7209808e7abc5ba279480182e$"
+	}
+}

@@ -1,0 +1,19 @@
+{
+  "name": "Darkkage",
+  "version": "0.0.1",
+  "description": "A Phaser 3 Game Project",
+  "main": "src/index.js",
+  "scripts": {
+    "build": "webpack --mode production",
+    "start": "npm run build && webpack-dev-server --port=8000"
+  },
+  "devDependencies": {
+    "raw-loader": "^0.5.1",
+    "webpack": "^4.15.1",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^2.11.0"
+  },
+  "dependencies": {
+    "phaser": "^3.3.0"
+  }
+}
