@@ -1,30 +1,29 @@
+import BootScene from './Scenes/boot'
+import PreloadScene from './Scenes/preload'
 
-var config = {
+let App = function() {}
+
+App.prototype.start = function() {
+  let scenes = [] // Save states group object
+  
+  scenes.push(BootScene)
+  scenes.push(PreloadScene)
+
+  let config = { // Game config
     type: Phaser.AUTO,
-    parent: 'dark-kage',
+    parent: 'phaser-app',
     width: 800,
     height: 600,
-    scene: {
-        preload: preload,
-        create: create
-    }
-};
-
-var game = new Phaser.Game(config);
-
-function preload ()
-{
-    this.load.image('logo', 'assets/logo.png');
+    scene: scenes,
+    tiele: 'Darkkage'
+  }
+    
+  let game = new Phaser.Game(config) // Create game app
+  
+  
 }
 
-function create ()
-{
-    var logo = this.add.image(400, 150, 'logo');
-
-    this.tweens.add({
-        targets: logo,
-        y: 450,
-        duration: 1000
-    });
-
+window.onload = function() { //Game start
+  let app = new App()
+  app.start()
 }

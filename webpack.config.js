@@ -12,12 +12,25 @@ module.exports = {
         publicPath: '/build/',
         filename: 'project.bundle.js'
     },
-
+    mode: 'development',
     module: {
         rules: [
           {
             test: [ /\.vert$/, /\.frag$/ ],
             use: 'raw-loader'
+          },
+          {
+            test: /\.js$/,
+			exclude: /node_modules/,
+            use: [
+                {
+                    loader: 'babel-loader',
+                    options: {
+                        presets : ['es2015'],
+                        plugins : ['transform-runtime']
+                    }
+                }
+            ]
           }
         ]
     },
