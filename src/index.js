@@ -8,7 +8,7 @@ App.prototype.start = function() {
   
   scenes.push(BootScene)
   scenes.push(PreloadScene)
-
+    
   let config = { // Game config
     type: Phaser.AUTO,
     parent: 'phaser-app',
@@ -17,10 +17,10 @@ App.prototype.start = function() {
     scene: scenes,
     tiele: 'Darkkage'
   }
-    
+
   let game = new Phaser.Game(config) // Create game app
   
-  
+  game._GAME_CONFIG = config // Globals
 }
 
 window.onload = function() { //Game start
