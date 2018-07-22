@@ -16,11 +16,12 @@ PreloadScene.preload = function () {
   createPreloadSprite.call(this, preloadSprite)
 
   this.load.image('logo','assets/logo.png')
-  this.load.multiatlas('yage', 'assets/yage.json', 'assets')
+  this.load.image('background','assets/background.png')
+  this.load.multiatlas('kage', 'assets/kage.json', 'assets')
 }
 
 PreloadScene.create = function () {
-  // start menu scene
+  this.scene.start('menu')
 }
 
 export default PreloadScene
