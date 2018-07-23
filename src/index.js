@@ -21,8 +21,8 @@ App.prototype.start = function() {
     physics: {
       default: 'arcade',
       arcade: {
-        gravity: {y: 300},
-        debug: false
+        gravity: {y: 500},
+        debug: true
       }
     },
     scene: scenes,

@@ -4,95 +4,11 @@
 			"image": "kage.png",
 			"format": "RGBA8888",
 			"size": {
-				"w": 1378,
-				"h": 180
+				"w": 1354,
+				"h": 176
 			},
 			"scale": 1,
 			"frames": [
-				{
-					"filename": "wait-3.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 250,
-						"h": 195
-					},
-					"spriteSourceSize": {
-						"x": 11,
-						"y": 13,
-						"w": 230,
-						"h": 177
-					},
-					"frame": {
-						"x": 1,
-						"y": 1,
-						"w": 230,
-						"h": 177
-					}
-				},
-				{
-					"filename": "wait-6.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 250,
-						"h": 194
-					},
-					"spriteSourceSize": {
-						"x": 9,
-						"y": 13,
-						"w": 230,
-						"h": 177
-					},
-					"frame": {
-						"x": 233,
-						"y": 1,
-						"w": 230,
-						"h": 177
-					}
-				},
-				{
-					"filename": "wait-2.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 250,
-						"h": 195
-					},
-					"spriteSourceSize": {
-						"x": 13,
-						"y": 13,
-						"w": 228,
-						"h": 177
-					},
-					"frame": {
-						"x": 465,
-						"y": 1,
-						"w": 228,
-						"h": 177
-					}
-				},
-				{
-					"filename": "wait-5.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 250,
-						"h": 194
-					},
-					"spriteSourceSize": {
-						"x": 9,
-						"y": 13,
-						"w": 228,
-						"h": 177
-					},
-					"frame": {
-						"x": 695,
-						"y": 1,
-						"w": 228,
-						"h": 177
-					}
-				},
 				{
 					"filename": "wait-1.png",
 					"rotated": false,
@@ -102,16 +18,16 @@
 						"h": 195
 					},
 					"spriteSourceSize": {
-						"x": 15,
-						"y": 12,
-						"w": 225,
-						"h": 178
+						"x": 16,
+						"y": 13,
+						"w": 223,
+						"h": 176
 					},
 					"frame": {
-						"x": 925,
-						"y": 1,
-						"w": 225,
-						"h": 178
+						"x": 0,
+						"y": 0,
+						"w": 223,
+						"h": 176
 					}
 				},
 				{
@@ -123,16 +39,100 @@
 						"h": 194
 					},
 					"spriteSourceSize": {
-						"x": 10,
-						"y": 12,
-						"w": 225,
-						"h": 178
+						"x": 11,
+						"y": 13,
+						"w": 223,
+						"h": 176
 					},
 					"frame": {
-						"x": 1152,
-						"y": 1,
-						"w": 225,
-						"h": 178
+						"x": 223,
+						"y": 0,
+						"w": 223,
+						"h": 176
+					}
+				},
+				{
+					"filename": "wait-3.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 250,
+						"h": 195
+					},
+					"spriteSourceSize": {
+						"x": 12,
+						"y": 14,
+						"w": 228,
+						"h": 175
+					},
+					"frame": {
+						"x": 446,
+						"y": 0,
+						"w": 228,
+						"h": 175
+					}
+				},
+				{
+					"filename": "wait-6.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 250,
+						"h": 194
+					},
+					"spriteSourceSize": {
+						"x": 10,
+						"y": 14,
+						"w": 228,
+						"h": 175
+					},
+					"frame": {
+						"x": 674,
+						"y": 0,
+						"w": 228,
+						"h": 175
+					}
+				},
+				{
+					"filename": "wait-2.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 250,
+						"h": 195
+					},
+					"spriteSourceSize": {
+						"x": 14,
+						"y": 14,
+						"w": 226,
+						"h": 175
+					},
+					"frame": {
+						"x": 902,
+						"y": 0,
+						"w": 226,
+						"h": 175
+					}
+				},
+				{
+					"filename": "wait-5.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 250,
+						"h": 194
+					},
+					"spriteSourceSize": {
+						"x": 10,
+						"y": 14,
+						"w": 226,
+						"h": 175
+					},
+					"frame": {
+						"x": 1128,
+						"y": 0,
+						"w": 226,
+						"h": 175
 					}
 				}
 			]
@@ -141,6 +141,6 @@
 	"meta": {
 		"app": "https://www.codeandweb.com/texturepacker",
 		"version": "3.0",
-		"smartupdate": "$TexturePacker:SmartUpdate:df826d6c0e5059097dbf555a1030013f:380c116486c3f96e9f59f00e27935947:9d1e8bb117f87478109011966e5635a6$"
+		"smartupdate": "$TexturePacker:SmartUpdate:73814ba0e357ee2e9a85aae856964da4:380c116486c3f96e9f59f00e27935947:9d1e8bb117f87478109011966e5635a6$"
 	}
 }

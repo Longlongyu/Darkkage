@@ -11,7 +11,7 @@ function createPreloadSprite(osprite) {
 }
 
 PreloadScene.preload = function () {
-  let config = this.sys.game._GAME_CONFIG
+  const config = this.sys.game._GAME_CONFIG
   let preloadSprite = this.add.sprite(config.width / 2, config.height / 2,'loading')
   createPreloadSprite.call(this, preloadSprite)
 
