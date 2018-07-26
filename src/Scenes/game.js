@@ -1,18 +1,20 @@
-import Player from '../Player/player'
+import Player from '../Player/Player'
+import Platform from '../Platform/Platform'
 
 let GameScene = new Phaser.Scene('game')
 
 GameScene.create = function () {
   const config = this.sys.game._GAME_CONFIG
   this.add.image(0, config.height, 'background').setOrigin(0,1)
-  let player = new Player(this, 300, 150)
+  const player = new Player(this, 300, 150)
+  const platformConfig = {
+    'loading' : {
+      y : config.height-100
+    }
+  }
+  const platforms = new Platform(this, 10, 0, platformConfig)
 
-  let platforms = this.physics.add.staticGroup()
-  platforms.create(100, config.height, 'loading').setOrigin(0.5)
-  player.sprite.body.width = player.sprite.body.width / 2
-  player.sprite.setOffset(player.sprite.body.width/2, 0)
-
-  this.physics.add.collider(player.sprite, platforms)
+  this.physics.add.collider(player.sprite, platforms.group)
   this._GAME_PLAYER = player
 }
 

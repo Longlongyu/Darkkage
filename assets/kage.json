@@ -2,137 +2,200 @@
 	"textures": [
 		{
 			"image": "kage.png",
-			"format": "RGBA8888",
+			"format": "RGBA4444",
 			"size": {
-				"w": 1354,
-				"h": 176
+				"w": 483,
+				"h": 493
 			},
 			"scale": 1,
 			"frames": [
 				{
-					"filename": "wait-1.png",
+					"filename": "run_0000_.png",
 					"rotated": false,
-					"trimmed": true,
+					"trimmed": false,
 					"sourceSize": {
-						"w": 250,
-						"h": 195
+						"w": 159,
+						"h": 163
 					},
 					"spriteSourceSize": {
-						"x": 16,
-						"y": 13,
-						"w": 223,
-						"h": 176
-					},
-					"frame": {
 						"x": 0,
 						"y": 0,
-						"w": 223,
-						"h": 176
+						"w": 159,
+						"h": 163
+					},
+					"frame": {
+						"x": 1,
+						"y": 1,
+						"w": 159,
+						"h": 163
 					}
 				},
 				{
-					"filename": "wait-4.png",
+					"filename": "run_0001_.png",
 					"rotated": false,
-					"trimmed": true,
+					"trimmed": false,
 					"sourceSize": {
-						"w": 250,
-						"h": 194
+						"w": 159,
+						"h": 163
 					},
 					"spriteSourceSize": {
-						"x": 11,
-						"y": 13,
-						"w": 223,
-						"h": 176
+						"x": 0,
+						"y": 0,
+						"w": 159,
+						"h": 163
 					},
 					"frame": {
-						"x": 223,
-						"y": 0,
-						"w": 223,
-						"h": 176
+						"x": 162,
+						"y": 1,
+						"w": 159,
+						"h": 163
 					}
 				},
 				{
-					"filename": "wait-3.png",
+					"filename": "run_0002_.png",
 					"rotated": false,
-					"trimmed": true,
+					"trimmed": false,
 					"sourceSize": {
-						"w": 250,
-						"h": 195
+						"w": 159,
+						"h": 163
 					},
 					"spriteSourceSize": {
-						"x": 12,
-						"y": 14,
-						"w": 228,
-						"h": 175
+						"x": 0,
+						"y": 0,
+						"w": 159,
+						"h": 163
 					},
 					"frame": {
-						"x": 446,
-						"y": 0,
-						"w": 228,
-						"h": 175
+						"x": 323,
+						"y": 1,
+						"w": 159,
+						"h": 163
 					}
 				},
 				{
-					"filename": "wait-6.png",
+					"filename": "drop_0000_.png",
 					"rotated": false,
-					"trimmed": true,
+					"trimmed": false,
 					"sourceSize": {
-						"w": 250,
-						"h": 194
+						"w": 159,
+						"h": 162
 					},
 					"spriteSourceSize": {
-						"x": 10,
-						"y": 14,
-						"w": 228,
-						"h": 175
+						"x": 0,
+						"y": 0,
+						"w": 159,
+						"h": 162
 					},
 					"frame": {
-						"x": 674,
-						"y": 0,
-						"w": 228,
-						"h": 175
+						"x": 1,
+						"y": 166,
+						"w": 159,
+						"h": 162
 					}
 				},
 				{
-					"filename": "wait-2.png",
+					"filename": "drop_0001_.png",
 					"rotated": false,
-					"trimmed": true,
+					"trimmed": false,
 					"sourceSize": {
-						"w": 250,
-						"h": 195
+						"w": 159,
+						"h": 162
 					},
 					"spriteSourceSize": {
-						"x": 14,
-						"y": 14,
-						"w": 226,
-						"h": 175
+						"x": 0,
+						"y": 0,
+						"w": 159,
+						"h": 162
 					},
 					"frame": {
-						"x": 902,
-						"y": 0,
-						"w": 226,
-						"h": 175
+						"x": 162,
+						"y": 166,
+						"w": 159,
+						"h": 162
 					}
 				},
 				{
-					"filename": "wait-5.png",
+					"filename": "drop_0002_.png",
 					"rotated": false,
-					"trimmed": true,
+					"trimmed": false,
 					"sourceSize": {
-						"w": 250,
-						"h": 194
+						"w": 159,
+						"h": 162
 					},
 					"spriteSourceSize": {
-						"x": 10,
-						"y": 14,
-						"w": 226,
-						"h": 175
+						"x": 0,
+						"y": 0,
+						"w": 159,
+						"h": 162
 					},
 					"frame": {
-						"x": 1128,
+						"x": 323,
+						"y": 166,
+						"w": 159,
+						"h": 162
+					}
+				},
+				{
+					"filename": "stand_0000_.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 95,
+						"h": 162
+					},
+					"spriteSourceSize": {
+						"x": 0,
 						"y": 0,
-						"w": 226,
-						"h": 175
+						"w": 95,
+						"h": 162
+					},
+					"frame": {
+						"x": 1,
+						"y": 330,
+						"w": 95,
+						"h": 162
+					}
+				},
+				{
+					"filename": "stand_0001_.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 95,
+						"h": 162
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 95,
+						"h": 162
+					},
+					"frame": {
+						"x": 98,
+						"y": 330,
+						"w": 95,
+						"h": 162
+					}
+				},
+				{
+					"filename": "stand_0002_.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 95,
+						"h": 162
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 95,
+						"h": 162
+					},
+					"frame": {
+						"x": 195,
+						"y": 330,
+						"w": 95,
+						"h": 162
 					}
 				}
 			]
@@ -141,6 +204,6 @@
 	"meta": {
 		"app": "https://www.codeandweb.com/texturepacker",
 		"version": "3.0",
-		"smartupdate": "$TexturePacker:SmartUpdate:73814ba0e357ee2e9a85aae856964da4:380c116486c3f96e9f59f00e27935947:9d1e8bb117f87478109011966e5635a6$"
+		"smartupdate": "$TexturePacker:SmartUpdate:34dfa8f8dba6202afe86a2575fbae8e5:f92612c0c46e65ee7ac8a7db43507ba6:9d1e8bb117f87478109011966e5635a6$"
 	}
 }
