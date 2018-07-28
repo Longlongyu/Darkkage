@@ -7,10 +7,11 @@ function Platform(game, num, startX,platformConfig) {
     }
     return element
   })()
-  this.group = game.physics.add.staticGroup()
-  
+  this.group = game.physics.add.group()
   this.addPlatform = function(x, y, keyName) {
-    return _this.group.create(x, y, keyName).setOrigin(0.5)
+    let o = _this.group.create(x, y, keyName).setOrigin(0.5)
+    o.body.setAllowGravity(false).immovable = true
+    return o
   }
   this.randomKeyName = function() {
     return keyArray[Math.floor(Math.random() * keyArray.length)];
@@ -29,5 +30,19 @@ function Platform(game, num, startX,platformConfig) {
   }
   init()
 }
+/*
+  platformConfig = {
+    x: number,
+    y: number,
+    keyName: string,
+  }
+*/
+/* function Platform(sence, x, y, texture, frame) {
+  Platform.prototype =  new Phaser.GameObjects.Sprite(sence, x, y, texture, frame)
+  console.dir(this)   
+    // Platform.prototype.body.setAllowGravity(false).immovable = true
+} */
+
+
 
 export default Platform
