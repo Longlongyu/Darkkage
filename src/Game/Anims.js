@@ -1,5 +1,6 @@
 function Anims() {
   let array = []
+
   this.addAnims = function(game, packageName, keyName, start, end) {
     game.anims.create({
       key: keyName,
@@ -11,6 +12,7 @@ function Anims() {
     })
     array.push(keyName)
   }
+
   this.hasAnims = function(keyName) {
     return array.includes(keyName)
   }

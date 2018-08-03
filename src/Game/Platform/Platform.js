@@ -30,19 +30,5 @@ function Platform(game, num, startX,platformConfig) {
   }
   init()
 }
-/*
-  platformConfig = {
-    x: number,
-    y: number,
-    keyName: string,
-  }
-*/
-/* function Platform(sence, x, y, texture, frame) {
-  Platform.prototype =  new Phaser.GameObjects.Sprite(sence, x, y, texture, frame)
-  console.dir(this)   
-    // Platform.prototype.body.setAllowGravity(false).immovable = true
-} */
-
-
 
 export default Platform

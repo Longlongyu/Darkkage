@@ -1,43 +1,41 @@
-import Skill from './Skill'
+import Skill from '../Skill'
 
 function Player(game, x, y) {
   const config = game.sys.game._GAME_CONFIG
-  const gameGroup = game._GAME_GROUP
+
   // Private
   let walkSpeed = 300,
+    jumpHeight = 400,
     name = 'kage',
-    runSpeed = 250,
-    jumpHeight = 430,
+    scale = 0.3,
     isLeft = false,
-    oKey = game.input.keyboard.createCursorKeys(),
-    sprite = game.physics.add.sprite(x, y, 'kage', 'stand_0000_.png')
+    oKey = game.input.keyboard.createCursorKeys()
+
+  // Create the physics-based sprite 
+  const sprite = game.physics.add
+    .sprite(x, y, 'kage', 'stand_0000_.png')
+    .setDrag(1000, 0)
+    .setScale(scale)
+    .setOffset(0, 9)
+
+  // Change the sprite's position by gravity
   function move() {
-    let array = gameGroup.getChildren()
     if(isLeft && oKey.left.isDown) { 
-      if(sprite.x <= config.width/2 && array[0].x <= 0) {
-        sprite.setVelocityX(0)
-        gameGroup.setMyVelocityX(walkSpeed)
-      } else {
-        sprite.setVelocityX(-walkSpeed)
-      }
+      sprite.setVelocityX(-walkSpeed)
     } else if (!isLeft && oKey.right.isDown) {
-      if(sprite.x >= config.width/2 && array[array.length-1].x >= config.width) {
-        sprite.setVelocityX(0)
-        gameGroup.setMyVelocityX(-walkSpeed)
-      } else {
-        sprite.setVelocityX(walkSpeed)
-      }
+      sprite.setVelocityX(walkSpeed)
     }
   }
+
   // Public
   this.sprite = sprite
   this.ative = 'stand'
+
+  // The sprite's skill group
   this.sillGroup = {
     'run' : {
       anims : 'stand',
-      skillEffect : function() {
-        move()
-      }
+      skillEffect : move
     },
     'stand' : {
       anims : 'stand',
@@ -47,9 +45,7 @@ function Player(game, x, y) {
     },
     'drop' : {
       anims : 'drop',
-      skillEffect : function() {
-        move()
-      }
+      skillEffect : move
     },
     'jump' : {
       anims : 'drop',
@@ -62,6 +58,7 @@ function Player(game, x, y) {
   
   this.skill = new Skill(game, name, this.sillGroup)
 
+  // Update the sprite's ative, animas and position
   this.updatePlay = function() {
     isLeft?sprite.setFlip(false,false):sprite.setFlip(true,false)
     if (oKey.left.isDown){
@@ -73,12 +70,14 @@ function Player(game, x, y) {
     } else {
       this.ative = 'stand'
     }
+
     if (!sprite.body.touching.down) {
       this.ative = 'drop'
     }
     if (oKey.up.isDown && sprite.body.touching.down) {
       this.ative = 'jump'
     }
+
     this.skill.play(sprite, this.ative)
   }
 
