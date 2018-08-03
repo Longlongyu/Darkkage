@@ -71,10 +71,10 @@ function Player(game, x, y) {
       this.ative = 'stand'
     }
 
-    if (!sprite.body.touching.down) {
+    if (!sprite.body.blocked.down) {
       this.ative = 'drop'
     }
-    if (oKey.up.isDown && sprite.body.touching.down) {
+    if (oKey.up.isDown && sprite.body.blocked.down) {
       this.ative = 'jump'
     }
 

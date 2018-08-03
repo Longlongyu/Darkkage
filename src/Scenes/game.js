@@ -6,10 +6,16 @@ let GameScene = new Phaser.Scene('game')
 GameScene.create = function () {
   const config = this.sys.game._GAME_CONFIG
 
-  // Add a background image
-  this.add.image(0, config.height, 'background').setOrigin(0,1)
-  
-  const platformConfig = {
+  const map = this.make.tilemap({ key: "map" })
+  const tiles = map.addTilesetImage("twin_dragons_0", "tiles")
+
+  map.createDynamicLayer("Black", tiles)
+  map.createDynamicLayer("Based-2", tiles)
+  map.createDynamicLayer("Based-3", tiles)
+  map.createDynamicLayer("Based", tiles)
+  this.groundLayer = map.createDynamicLayer("Background", tiles)
+
+  /* const platformConfig = {
     'loading' : {
       y : config.height-100
     }
@@ -23,19 +29,23 @@ GameScene.create = function () {
       items[i].body.velocity.x += value
     }
     return this
-  }
+  } */
 
   // Create a player and his a sprite
-  const player = new Player(this, 300, 150)
+  const spawnPoint = map.findObject("Player", obj => true)
+  const player = new Player(this, spawnPoint.x, spawnPoint.y)
+
   // Add a camera to follow player's sprite
-  this.cameras.main.setBounds(0, 0, 1920, config.height)
+  this.cameras.main.setBounds(0, 0, map.widthInPixels, map.heightInPixels)
   this.cameras.main.startFollow(player.sprite, false)
   
   // Create the physics-based collider
-  this.physics.add.collider(player.sprite, platforms.group)
+  this.groundLayer.setCollisionByProperty({ collides: true })  
+  this.physics.world.addCollider(player.sprite, this.groundLayer)
+
   this.physics.world.setFPS(60)
 
-  this._GAME_GROUP = gameGroup
+  // this._GAME_GROUP = gameGroup
   this._GAME_PLAYER = player
 }
 
