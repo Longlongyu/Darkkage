@@ -17,10 +17,9 @@ PreloadScene.preload = function () {
 
   
   this.load.image('logo','assets/logo.png')
-  // this.load.image('background','assets/background.png')
   this.load.multiatlas('kage', 'assets/kage.json', 'assets')
   this.load.image("tiles", "assets/twin_dragons_0.png")
-  this.load.tilemapTiledJSON("map", "assets/sheet-alt.json")
+  this.load.tilemapTiledJSON("map", "assets/test.json")
 }
 
 PreloadScene.create = function () {

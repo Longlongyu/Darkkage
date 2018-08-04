@@ -82,7 +82,6 @@ function Player(game, x, y) {
   }
 
   function init() {
-    sprite.body.setCollideWorldBounds(true)
     sprite.body.setMass(1.5)
   }
   init()
